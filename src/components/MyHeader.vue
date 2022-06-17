@@ -78,6 +78,11 @@ export default {
 
 <style scoped lang="scss">
 @import '../../public/scss/icon-fontAwesome.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 $link-active: #54a096;
     .container-preHeader {
         background-color: #eee;
@@ -130,6 +135,7 @@ $link-active: #54a096;
                         a.here {
                             color: $link-active;
                             border-top: 2px solid $link-active;
+                            line-height: 75px;
                         }
                     }
                 }
