@@ -1,16 +1,27 @@
 <template>
-    <header>
-        <div class="container">
-            <img :src="logo" :alt="myName">
-            <nav>
-                <ul>
-                    <li v-for="(item, index) in menu" :key="index">
-                        <a href="#">{{item.title}}</a>
-                    </li>
-                </ul>
-            </nav>  
+    <div>
+        <div id="preHeader">
+            <p>
+                Avada & Associates legal team announce deal to open up oil & gas
+            </p>
         </div>
-    </header>
+
+        <!-- header -->
+        <header>
+            <div class="container">
+                <img :src="logo" :alt="myName">
+                
+                <!-- menu nav -->
+                <nav>
+                    <ul>
+                        <li v-for="(item, index) in menu" :key="index">
+                            <a href="#">{{item.title}}</a>
+                        </li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+    </div>
 </template>
 
 <script>
@@ -50,12 +61,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    #preHeader {
+        width: 70%;
+        margin: 0 auto;
+    }
     header {
         width: 100%;
         background-color: #fff;
-        position: fixed;
-        top: 0;
-        left: 0;
 
         .container {
             display: flex;
@@ -67,6 +79,7 @@ export default {
             nav {
                 ul {
                     list-style-type: none;
+
                     li {
                         display: inline-block;
                         margin-right: 10px;
