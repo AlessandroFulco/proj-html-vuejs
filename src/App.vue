@@ -242,7 +242,7 @@
         </section>
 
         <section>
-          <img src="./assets/images/law_7.jpg" alt="Internation">
+          <img src="./assets/images/law_8.jpg" alt="Internation">
           <h3>
             PARTNERSHIPS
           </h3>
@@ -252,7 +252,7 @@
         </section>
 
         <section>
-          <img src="./assets/images/law_7.jpg" alt="Internation">
+          <img src="./assets/images/law_3.jpg" alt="Internation">
           <h3>
             EXCELLENCE
           </h3>
