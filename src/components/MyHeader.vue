@@ -1,6 +1,15 @@
 <template>
     <header>
-        <img :src="logo" :alt="myName">
+        <div class="container">
+            <img :src="logo" :alt="myName">
+            <nav>
+                <ul>
+                    <li v-for="(item, index) in menu" :key="index">
+                        <a href="#">{{item.title}}</a>
+                    </li>
+                </ul>
+            </nav>  
+        </div>
     </header>
 </template>
 
@@ -42,12 +51,41 @@ export default {
 
 <style scoped lang="scss">
     header {
-        color: #fff;
         width: 100%;
-        height: 100px;
-        background-color: #000;
+        background-color: #fff;
         position: fixed;
         top: 0;
         left: 0;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            margin: 0 auto;
+            height: 100px;
+            nav {
+                ul {
+                    list-style-type: none;
+                    li {
+                        display: inline-block;
+                        margin-right: 10px;
+                        
+                        a {
+                            font-size: 14px;
+                            text-decoration: none;
+                            color: #666;
+                            font-weight: bold;
+                            padding: 10px;
+
+                            &:hover {
+                                background-color: #ddd;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 </style>

@@ -55,5 +55,6 @@ export default {
 }
 #app {
   font-family: Helvetica, Arial, sans-serif;
+  
 }
 </style>
