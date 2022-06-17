@@ -126,7 +126,7 @@
           GLOBAL CHALLENGE. WORLD CLASS RESPONSE
         </h1>
 
-        <hr>
+        <hr class="divisor">
         <!-- comp. x18 -->
         <div class="list-card">
           <!-- list 1 -->
@@ -265,17 +265,23 @@
       <!-- /sez -->
         
       <!-- Enquiry -->
-      
+      <div id="enquiry">
+        <h2>
+          LET'S WORK TOGETHER
+        </h2>
+        <hr class="divisor">
+        <p>
+          We Work as a single united team with market leading firms around the world and give our clients the highest quality advice possible
+        </p>
+
+        <button class="btn">MAKE ENQUIRY</button>
+
+      </div>
 
     </main>
 
-
-
-
-
-
-
     <!-- footer -->
+    
     
     
   </div>
@@ -295,6 +301,7 @@ export default {
 <style lang="scss">
 $bg-sez: #f5f5f5;
 $bg-banner: #54a096;
+$color-divisor: #8c919e;
 * {
   margin: 0;
   padding: 0;
@@ -365,7 +372,7 @@ $bg-banner: #54a096;
       text-align: center;
       padding: 100px 0;
       
-      hr {
+      .divisor {
         width: 200px;
         margin: 50px auto;
         color: $bg-sez
@@ -441,6 +448,27 @@ $bg-banner: #54a096;
           font-size: 14px;
         }
       }
+    }
+    #enquiry {
+      height: 500px;
+      width: 100%;
+      background-image: url('./assets/images/where-we-work-parallax.jpg');
+      background-position: center center;
+      
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .divisor {
+        width: 200px;
+        margin: 50px auto;
+        color: $color-divisor;
+      }
+      
     }
   }
 }
