@@ -1,21 +1,30 @@
 <template>
     <div>
-        <div id="preHeader">
+        <div class="container-preHeader">
+            <div id="preHeader">
             <p>
                 Avada & Associates legal team announce deal to open up oil & gas
             </p>
+            <div>
+                <!-- icone fontawesome social -->
+                <i><font-awesome-icon icon="fa-brands fa-facebook-square" /></i>
+                <i><font-awesome-icon icon="fa-brands fa-twitter-square" /></i>
+                <i><font-awesome-icon icon="fa-brands fa-instagram-square" /></i>
+                <i><font-awesome-icon icon="fa-brands fa-youtube-square" /></i>
+            </div>
+        </div>
         </div>
 
         <!-- header -->
         <header>
             <div class="container">
                 <img :src="logo" :alt="myName">
-                
+
                 <!-- menu nav -->
                 <nav>
                     <ul>
                         <li v-for="(item, index) in menu" :key="index">
-                            <a href="#">{{item.title}}</a>
+                            <a href="#" :class="item.active == true ? 'here' : '' ">{{item.title}}</a>
                         </li>
                     </ul>
                 </nav>  
@@ -34,25 +43,32 @@ export default {
             logo: require('../assets/images/avada-law-logo.png'),
             menu: [
                 {
-                    title: "Home"
+                    title: "Home",
+                    active: true
                 },
                 {
-                    title: "Who We Are"
+                    title: "Who We Are",
+                    active: false
                 },
                 {
-                    title: "What We Do"
+                    title: "What We Do",
+                    active: false
                 },
                 {
-                    title: "Where We Work"
+                    title: "Where We Work",
+                    active: false
                 },
                 {
-                    title: "Careers"
+                    title: "Careers",
+                    active: false
                 },
                 {
-                    title: "News"
+                    title: "News",
+                    active: false
                 },
                 {
-                    title: "Contact"
+                    title: "Contact",
+                    active: false
                 }
             ]
         }
@@ -61,9 +77,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    #preHeader {
-        width: 70%;
+@import '../../public/scss/icon-fontAwesome.scss';
+$link-active: #54a096;
+    .container-preHeader {
+        background-color: #eee;
+        #preHeader {
+            width: 70%;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        p {
+            font-size: 12px;
+            color: #666;
+        }
+        
+    }
     }
     header {
         width: 100%;
@@ -75,26 +105,31 @@ export default {
             align-items: center;
             width: 70%;
             margin: 0 auto;
-            height: 100px;
+            height: 80px;
             nav {
                 ul {
                     list-style-type: none;
-
+                    display: flex;
+                    align-items: center;
+                    
                     li {
-                        display: inline-block;
+                        height: 80px;
                         margin-right: 10px;
-                        
+                        display: flex;
                         a {
                             font-size: 14px;
                             text-decoration: none;
                             color: #666;
                             font-weight: bold;
-                            padding: 10px;
+                            height: 80px;
+                            line-height: 80px;
+                            vertical-align: middle;
 
-                            &:hover {
-                                background-color: #ddd;
-                                color: #000;
-                            }
+                            
+                        }
+                        a.here {
+                            color: $link-active;
+                            border-top: 2px solid $link-active;
                         }
                     }
                 }

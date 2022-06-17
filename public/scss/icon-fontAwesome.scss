@@ -1,0 +1,43 @@
+$icon-color: #54a096;
+i {
+    margin-right: 10px;
+    color: $icon-color;
+    font-size: 20px;
+}
+
+main {
+    .info.rules {
+        section {
+            i {
+                display: inline-block;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+footer {
+
+    i {
+        font-size: 30px;
+    }
+    
+    div#arrow-up-icon {
+        position: absolute;
+        bottom: 0;
+        right: 80px;
+        background-color: #222;
+        border-radius: 3px 3px 0 0;
+        width: 30px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i.arrow {
+            font-size: 12px;
+            margin-right: 0;
+            color: #fff;
+        }
+    }
+}

@@ -27,7 +27,7 @@
             WHO WE ARE
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius animi ea repudiandae expedita rerum. Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum placeat aut voluptates porro, dicta recusandae saepe iure soluta id maiores ipsa dolorem expedita autem harum optio a sed reiciendis veritatis?
           </p>
           <button class="btn">
             LEARN MORE
@@ -39,7 +39,7 @@
             WHO WE DO
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius animi ea repudiandae expedita rerum. Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum placeat aut voluptates porro, dicta recusandae saepe iure soluta id maiores ipsa dolorem expedita autem harum optio a sed reiciendis veritatis?
           </p>
           <button class="btn">
             LEARN MORE
@@ -51,7 +51,7 @@
             WHO WE WORK
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius animi ea repudiandae expedita rerum. Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum placeat aut voluptates porro, dicta recusandae saepe iure soluta id maiores ipsa dolorem expedita autem harum optio a sed reiciendis veritatis?
           </p>
           <button class="btn">
             LEARN MORE
@@ -62,9 +62,9 @@
       <!-- comp. x4 -->
       <div class="info rules">
         <section>
-          <h1>=</h1>
+          <i><font-awesome-icon icon="fa-solid fa-check" /></i>
           <h2>
-            WHO WE ARE
+            A GLOBAL VIEW
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius animi ea repudiandae expedita rerum. Lorem ipsum dolor sit amet.
@@ -73,9 +73,9 @@
         </section>
 
         <section>
-          <h1>=</h1>
+          <i><font-awesome-icon icon="fa-solid fa-check" /></i>
           <h2>
-            WHO WE DO
+            EXPERT LAWYERS
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius animi ea repudiandae expedita rerum. Lorem ipsum dolor sit amet.
@@ -84,9 +84,9 @@
         </section>
 
         <section>
-          <h1>=</h1>
+          <i><font-awesome-icon icon="fa-solid fa-check" /></i>
           <h2>
-            WHO WE WORK
+            CLIENT FOCUS
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius animi ea repudiandae expedita rerum. Lorem ipsum dolor sit amet.
@@ -95,9 +95,9 @@
         </section>
 
         <section>
-          <h1>=</h1>
+          <i><font-awesome-icon icon="fa-solid fa-check" /></i>
           <h2>
-            WHO WE WORK
+            LOCAL KNOWLEDGE
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius animi ea repudiandae expedita rerum. Lorem ipsum dolor sit amet.
@@ -114,7 +114,7 @@
           <h2>
             QUESTION ABOUT A JUDICAL ISSUE? ASK OUR EXPERTS.
           </h2>
-          <button class="btn">
+          <button class="btn btn-banner">
             ASK AN EXPERT
           </button>
         </div>
@@ -271,34 +271,40 @@
         </h2>
         <hr class="divisor">
         <p>
-          We Work as a single united team with market leading firms around the world and give our clients the highest quality advice possible
+          We Work as a single united team with market leading firms around the world and give 
+          <br> 
+          our clients the highest quality advice possible
         </p>
 
-        <button class="btn">MAKE ENQUIRY</button>
+        <button class="btn btn-enquiry">MAKE ENQUIRY</button>
 
       </div>
-
     </main>
 
     <!-- footer -->
     
-    
+    <MyFooter/>
     
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
+import MyFooter from './components/MyFooter.vue'
+
 
 export default {
   name: 'App',
   components: {
-    MyHeader
+    MyHeader,
+    MyFooter
   }
 }
 </script>
 
 <style lang="scss">
+@import './public/scss/button.scss';
+@import '../public/scss/icon-fontAwesome.scss';
 $bg-sez: #f5f5f5;
 $bg-banner: #54a096;
 $color-divisor: #8c919e;
@@ -312,12 +318,9 @@ $color-divisor: #8c919e;
   color: #000;
 
   main {
-    .info {
-      text-align: center;
-    }
-
+    
     .jumbo {
-
+      
       section {
         display: flex;
         align-items: center;
@@ -333,27 +336,40 @@ $color-divisor: #8c919e;
       }
     }
 
-    .info.objective {
-      background-color: $bg-sez;
+    .info {
+      text-align: center;
       display: flex;
       justify-content: center;
       padding: 70px 0;
 
+
+      section {
+        padding: 40px 0;
+        p {
+          padding: 30px;
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .info.objective {
+      background-color: $bg-sez;
+      border-bottom: 2px solid #eee;
+      
       section {
         border-top: 3px solid $bg-banner;
         flex-basis: calc(70% / 3);  
-        padding: 10px;
         background-color: #fff;
       }
     }
     .info.rules {
-      border-top: 2px solid #eee;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      padding: 70px 0;
       section {
         flex-basis: calc(70% / 4);
+        p {
+          color: #888;
+          font-size: 14px;
+        }
       }
     }
 
@@ -365,24 +381,28 @@ $color-divisor: #8c919e;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        padding: 40px;
+        padding: 70px 0;
       }
     }
     #myClass {
-      text-align: center;
-      padding: 100px 0;
       
+      padding: 100px 0;
+      h1 {
+        text-align: center;
+      }
       .divisor {
         width: 200px;
         margin: 50px auto;
         color: $bg-sez
       }
       .list-card {
+        width: 70%;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
+        gap: 20px;
 
         ul {
-          margin: 0 15px;
+          flex-basis: calc(100% / 3);
           list-style-type: none;
 
           li {
@@ -404,7 +424,7 @@ $color-divisor: #8c919e;
     }
     .cit {
       width: 100%;
-      height: 400px;
+      height: 350px;
       background-image: url('./assets/images/showeare-parallax.jpg');
       background-position: center -380px;
       background-repeat: no-repeat;
@@ -423,13 +443,16 @@ $color-divisor: #8c919e;
         line-height: 30px;
         letter-spacing: 2px;
       }
+      h3 {
+        font-style: normal;
+      }
     }
     .info.special {
       
       background-color: $bg-sez;
       display: flex;
       justify-content: center;
-      padding: 70px 0;
+      padding: 150px 0;
       section {
         border-top: 3px solid $bg-banner;
         background-color: #fff;
@@ -465,8 +488,14 @@ $color-divisor: #8c919e;
 
       .divisor {
         width: 200px;
-        margin: 50px auto;
+        margin: 40px auto;
         color: $color-divisor;
+      }
+      p {
+        line-height: 25px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: bold;
       }
       
     }

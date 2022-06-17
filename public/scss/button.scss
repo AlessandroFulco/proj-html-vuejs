@@ -1,0 +1,21 @@
+$tuna: #30343a;
+$Sea-Nymph: #74a59e;
+$Breaker-Bay: #54a096;
+
+.btn {
+    border: none;
+    background-color: $tuna;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn-banner {
+    background-color: $Sea-Nymph;    
+}
+
+.btn-enquiry {
+    background-color: $Breaker-Bay;
+    padding: 15px 25px;
+}
