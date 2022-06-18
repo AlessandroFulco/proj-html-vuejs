@@ -7,10 +7,18 @@
             </p>
             <div>
                 <!-- icone fontawesome social -->
-                <i><font-awesome-icon icon="fa-brands fa-facebook-square" /></i>
-                <i><font-awesome-icon icon="fa-brands fa-twitter-square" /></i>
-                <i><font-awesome-icon icon="fa-brands fa-instagram-square" /></i>
-                <i><font-awesome-icon icon="fa-brands fa-youtube-square" /></i>
+                <a href="#">
+                    <i><font-awesome-icon icon="fa-brands fa-facebook-square" /></i>
+                </a>
+                <a href="#">
+                    <i><font-awesome-icon icon="fa-brands fa-twitter-square" /></i>
+                </a>
+                <a href="#">
+                    <i><font-awesome-icon icon="fa-brands fa-instagram-square" /></i>
+                </a>
+                <a href="#">
+                    <i><font-awesome-icon icon="fa-brands fa-youtube-square" /></i>
+                </a>
             </div>
         </div>
         </div>

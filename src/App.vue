@@ -358,7 +358,7 @@ $color-divisor: #8c919e;
       border-bottom: 2px solid #eee;
       
       section {
-        border-top: 3px solid $bg-banner;
+        border-top: 5px solid $bg-banner;
         flex-basis: calc(70% / 3);  
         background-color: #fff;
       }
@@ -381,6 +381,7 @@ $color-divisor: #8c919e;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 70px 0;
       }
     }
@@ -406,6 +407,8 @@ $color-divisor: #8c919e;
           list-style-type: none;
 
           li {
+            color: #666;
+            font-weight: bold;
             padding: 20px;
             margin-bottom: 10px;
             background-color: $bg-sez;
@@ -445,6 +448,7 @@ $color-divisor: #8c919e;
       }
       h3 {
         font-style: normal;
+        font-size: 19px;
       }
     }
     .info.special {
@@ -454,7 +458,7 @@ $color-divisor: #8c919e;
       justify-content: center;
       padding: 150px 0;
       section {
-        border-top: 3px solid $bg-banner;
+        border-top: 5px solid $bg-banner;
         background-color: #fff;
         padding: 40px;
         flex-basis: calc(70% / 3);
@@ -494,7 +498,7 @@ $color-divisor: #8c919e;
       p {
         line-height: 25px;
         letter-spacing: 1px;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: bold;
       }
       
