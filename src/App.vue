@@ -137,23 +137,23 @@
             </li>
             <li>
               <img src="./assets/images/column1-image2.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Allen Lucas</span>
             </li>
             <li>
               <img src="./assets/images/column1-image3.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Muriel Potter</span>
             </li>
             <li>
               <img src="./assets/images/column1-image4.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Ken Douglas</span>
             </li>
             <li>
               <img src="./assets/images/column1-image5.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Loretta Harris</span>
             </li>
             <li>
               <img src="./assets/images/column1-image6.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Phil Russel</span>
             </li>
           </ul>
 
@@ -161,54 +161,54 @@
           <ul>
             <li>
               <img src="./assets/images/column2-image1.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Tax Litigation</span>
             </li>
             <li>
               <img src="./assets/images/column2-image2.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Acquisition</span>
             </li>
             <li>
               <img src="./assets/images/column2-image3.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Financial Advice</span>
             </li>
             <li>
               <img src="./assets/images/column2-image4.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>International</span>
             </li>
             <li>
               <img src="./assets/images/column2-image5.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Oil and Gas</span>
             </li>
             <li>
               <img src="./assets/images/column2-image6.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Capital Markets</span>
             </li>
           </ul>
           <!-- list 3 -->
           <ul>
             <li>
               <img src="./assets/images/column3-image1.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Low Oil Prices</span>
             </li>
             <li>
               <img src="./assets/images/column3-image2.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Cost of Divorce</span>
             </li>
             <li>
               <img src="./assets/images/column3-image3.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>2015 Tax Laws</span>
             </li>
             <li>
               <img src="./assets/images/column3-image4.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Surveys Matter</span>
             </li>
             <li>
               <img src="./assets/images/column3-image5.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>In-House Work</span>
             </li>
             <li>
               <img src="./assets/images/column3-image6.jpg" alt="Debora Brown">
-              <span>Debora Brown</span>
+              <span>Obama Care</span>
             </li>
           </ul>
         </div>
@@ -350,7 +350,13 @@ export default {
       border-bottom: 2px solid #eee;
       
       section {
+        border: 2px solid $Ebb;
+        border-right: none;
         border-top: 5px solid $link-active;
+        &:last-child {
+          border-right: 2px solid $Ebb;
+        }
+
         flex-basis: calc(70% / 3);  
         background-color: #fff;
       }
@@ -450,7 +456,13 @@ export default {
       justify-content: center;
       padding: 150px 0;
       section {
+        border: 2px solid $Ebb;
+        border-right: none;
         border-top: 5px solid $link-active;
+        &:last-child {
+          border-right: 2px solid $Ebb;
+        }
+
         background-color: #fff;
         padding: 40px;
         flex-basis: calc(70% / 3);
