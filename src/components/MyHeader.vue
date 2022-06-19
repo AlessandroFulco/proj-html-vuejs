@@ -86,12 +86,13 @@ export default {
 
 <style scoped lang="scss">
 @import '../../public/scss/icon-fontAwesome.scss';
+@import '../../public/scss/color-variable.scss';
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-$link-active: #54a096;
+
     .container-preHeader {
         background-color: #eee;
         #preHeader {
@@ -127,7 +128,7 @@ $link-active: #54a096;
                     
                     li {
                         height: 80px;
-                        margin-right: 10px;
+                        margin-right: 20px;
                         display: flex;
                         a {
                             font-size: 14px;

@@ -305,9 +305,8 @@ export default {
 <style lang="scss">
 @import './public/scss/button.scss';
 @import '../public/scss/icon-fontAwesome.scss';
-$bg-sez: #f5f5f5;
-$bg-banner: #54a096;
-$color-divisor: #8c919e;
+@import '../public/scss/color-variable.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -320,14 +319,7 @@ $color-divisor: #8c919e;
   main {
     
     .jumbo {
-      
-      section {
-        display: flex;
-        align-items: center;
-        height: 20px;
-        width: 70%;
-        margin: 0 auto;
-      }
+      height: 600px;
       img {
         height: 600px;
         width: 100%;
@@ -358,7 +350,7 @@ $color-divisor: #8c919e;
       border-bottom: 2px solid #eee;
       
       section {
-        border-top: 5px solid $bg-banner;
+        border-top: 5px solid $link-active;
         flex-basis: calc(70% / 3);  
         background-color: #fff;
       }
@@ -374,7 +366,7 @@ $color-divisor: #8c919e;
     }
 
     .banner {
-      background-color: $bg-banner;
+      background-color: $link-active;
       color: #fff;
       div {
         width: 70%;
@@ -458,7 +450,7 @@ $color-divisor: #8c919e;
       justify-content: center;
       padding: 150px 0;
       section {
-        border-top: 5px solid $bg-banner;
+        border-top: 5px solid $link-active;
         background-color: #fff;
         padding: 40px;
         flex-basis: calc(70% / 3);
