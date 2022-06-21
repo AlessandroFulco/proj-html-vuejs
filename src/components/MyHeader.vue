@@ -32,7 +32,7 @@
                 <nav>
                     <ul>
                         <li v-for="(item, index) in menu" :key="index">
-                            <a href="#" :class="item.active == true ? 'here' : '' ">{{item.title}}</a>
+                            <a href="#" @click.prevent="changeActive(item)" :class="item.active ? 'here' : '' ">{{item.title}}</a>
                         </li>
                     </ul>
                 </nav>  
@@ -80,6 +80,14 @@ export default {
                 }
             ]
         }
+    },
+    methods: {
+        changeActive(item) {
+            this.menu.forEach(element => {
+                element.active = false;
+            });
+            item.active = true;
+        },
     }
 }
 </script>
