@@ -429,7 +429,6 @@ export default {
       background-image: url('./assets/images/showeare-parallax.jpg');
       background-position: center -380px;
       background-repeat: no-repeat;
-      background-size: cover;
 
       color: #fff;
       font-style: italic;
