@@ -87,7 +87,7 @@ export default {
                 element.active = false;
             });
             item.active = true;
-        },
+        }
     }
 }
 </script>

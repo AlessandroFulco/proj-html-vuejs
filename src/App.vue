@@ -338,7 +338,7 @@ export default {
       section {
         padding: 40px 0;
         p {
-          padding: 30px;
+          padding: 20px;
           font-size: 14px;
           line-height: 25px;
         }
